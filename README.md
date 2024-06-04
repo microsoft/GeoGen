@@ -2,7 +2,7 @@
 
 # GeoGen Dataset
 
-The GeoGen dataset is a comprehensive collection of over 198,000 synthetic face images designed for advanced face recognition and 3D geometry reconstruction research.
+The GeoGen dataset is a comprehensive collection of over 70,000 synthetic face images designed for advanced face recognition and 3D geometry reconstruction research.
 
 The dataset is essential for training deep learning models that are geared towards high-fidelity 3D facial geometry reconstruction.
 
