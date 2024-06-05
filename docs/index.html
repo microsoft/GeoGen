@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DigiFace-1M</title>
+    <title>GeoGen</title>
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -17,7 +17,7 @@
         <div class="container is-max-desktop">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/">
-                    <img src="img/Microsoft-logo.svg" alt="Mixed Reality & AI Lab – Cambridge" style="height: 1.4rem;">
+                    <img src="img/Microsoft-logo.svg" alt="Mesh Labs – Cambridge" style="height: 1.4rem;">
                 </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -28,7 +28,7 @@
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
                     <a class="navbar-item" href="https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/">
-                        Mixed Reality & AI
+                        Mesh Labs
                     </a>
                 </div>
                 <div class="navbar-end">
@@ -43,36 +43,39 @@
     <section class="section">
         <div class="container is-max-desktop">
             <h1 class="title is-2 is-size-3-mobile is-spaced has-text-centered">
-                DigiFace-1M: 1 Million Digital Face Images for Face Recognition
+                GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions
             </h1>
             <p class="subtitle is-5 has-text-centered has-text-grey">
-                Winter Conference on<br class="is-hidden-tablet"> Applications of Computer Vision 2023
+                Computer Vision <br class="is-hidden-tablet"> and Pattern Recognition 2024
             </p>
             <p class="subtitle is-6 has-text-centered authors mt-5" style="line-height: 1.5;">
 
                 <span>
-                    <a href="https://www.baegwangbin.com">Gwangbin&nbsp;Bae</a>
+                    <a href="https://iamsalvatore.io/">Salvatore&nbsp;Esposito</a>
                 </span>
                 <span>
-                    <a href="mailto:martin.delagorce@microsoft.com">Martin&nbsp;de&nbsp;La&nbsp;Gorce</a>
+                    <a href="https://ghixu.github.io/">Qingshan&nbsp;Xu</a>
                 </span>
                 <span>
-                    <a href="mailto:tabaltru@microsoft.com">Tadas&nbsp;Baltrušaitis</a>
+                    <a href="https://kacper.ai/">Kacper&nbsp;Kania</a>
                 </span>
                 <span>
                     <a href="https://chewitt.me/">Charlie&nbsp;Hewitt</a>
                 </span>
                 <span>
-                    <a href="mailto:doch@microsoft.com">Dong&nbsp;Chen</a>
+                    <a href="mailto:omariott@exseed.ed.ac.uk">Octave&nbsp;Mariotti</a>
+                </span>
+                <span>
+                    <a href="mailto:lohitpetikam@microsoft.com">Lohit&nbsp;Petikam</a>
                 </span>
                 <span>
                     <a href="mailto:juvalen@microsoft.com">Julien&nbsp;Valentin</a>
                 </span>
                 <span>
-                    <a href="mailto:rc10001@cam.ac.uk">Roberto&nbsp;Cipolla</a>
+                    <a href="mailto:aonken@inf.ed.ac.uk">Arno&nbsp;Onken</a>
                 </span>
                 <span>
-                    <a href="mailto:jinshen@microsoft.com">Jingjing&nbsp;Shen</a>
+                    <a href="mailto:oisin.macaodha@ed.ac.uk">Oisin&nbsp;MacAodha</a>
                 </span>
             </p>
         </div>
@@ -85,7 +88,7 @@
                 <span class="icon"><i class="ai ai-arxiv"></i></span>
                 <span>arXiv</span>
             </a>
-            <a href="https://github.com/microsoft/DigiFace1M" class="button is-rounded is-link is-light">
+            <a href="https://github.com/microsoft/GeoGen" class="button is-rounded is-link is-light">
                 <span class="icon"><i class="fab fa-github"></i></span>
                 <span>Dataset</span>
             </a>
@@ -105,15 +108,13 @@
                 Abstract
             </h1>
             <div class="content has-text-justified-desktop">
-                State-of-the-art face recognition models show impressive accuracy, achieving over 99.8% on Labeled Faces in the Wild (LFW) dataset.
-                However, these models are trained on large-scale datasets that contain millions of real human face images collected from the internet.
-                Web-crawled face images are severely biased (in terms of race, lighting, make-up, etc) and often contain labeling noise.
-                Most importantly, these face images are collected without explicit consent, raising more pressing privacy and ethical concerns.
-                To avoid the problems associated with real face datasets, we introduce a large-scale synthetic dataset for face recognition, obtained by photo-realistic rendering of diverse and high-quality digital faces using a computer graphics pipeline.
-                We compare our method to SynFace, a recent method trained on GAN-generated synthetic faces, and reduce the error rate on LFW by 52.5% (accuracy from 91.93% to 96.17%).
-                We first demonstrate that aggressive data augmentation can significantly help reduce the domain-gap between our synthetic faces and real face images.
-                Taking advantage of having full control over the rendering pipeline, we also study how each attribute (e.g., variation in facial pose, accessories, and textures) affects the accuracy.
-                Finally, by fine-tuning the network on a smaller number of real face images that could reasonably be obtained with consent, we achieve accuracy that is comparable to the methods trained on millions of real face images, while alleviating the problems associated with large datasets.
+                We introduce a new generative approach for synthesizing 3D geometry and images from single-view collections. 
+                Most existing approaches predict volumetric density to render multi-view consistent images. By employing volumetric rendering using neural radiance fields, they inherit a key limi- tation: the generated geometry is noisy and unconstrained, limiting the quality and utility of the output meshes. 
+                To address this issue, we propose GeoGen, a new SDF-based 3D generative model trained in an end-to-end manner. Initially, we reinterpret the volumetric density as a Signed Distance Function (SDF). This allows us to introduce useful priors to generate valid meshes. 
+                However, those priors prevent the generative model from learning details, limiting the applicability of the method to real-world scenarios. To alle- viate that problem, we make the transformation learnable and constrain the rendered depth map to be consistent with the zero-level set of the SDF. 
+                Through the lens of adversarial training, we encourage the network to produce higher fidelity details on the output meshes. 
+                For evaluation, we in- troduce a synthetic dataset of human avatars captured from 360-degree camera angles, to overcome the challenges pre- sented by real-world datasets, which often lack 3D consistency and do not cover all camera angles. 
+                Our experiments on multiple datasets show that GeoGen produces visually and quantitatively better geometry than the previous generative models based on neural radiance fields.
             </div>
         </div>
     </section>
@@ -124,8 +125,12 @@
             </h1>
             <div class="content has-text-justified-desktop">
                 <p>
-                    State-of-the-art face recognition models are trained on millions of real human face images collected from the internet.
-                    <b>DigiFace-1M</b> aims to tackle three major problems associated with such large-scale face recognition datasets.
+                    A common pitfall in the pursuit of higher image quality is the sidelining of the quality of the underlying geometry. This issue is evident in datasets like FFHQ, which lack accurate camera parameters and ground truth meshes, relying instead on approximate camera parameters. Such limitations hinder their applicability for tasks requiring precise geometric information. 
+                    Previous approaches, such as EG3D and StyleSDF, have attempted to address these issues with varying degrees of success. State-of-the-art face recognition models are trained on millions of real human face images collected from the internet. 
+                    <b>GeoGen</b> aims to tackle three major problems associated with such large-scale face recognition datasets.
+                </p>
+                <p>
+                    The FFHQ dataset's lack of accurate camera parameters and ground truth meshes limits its use for precise geometric tasks. This motivated us to create and release a new dataset with accurate camera parameters, ground truth meshes, and 10 images of 512×512 for each of 19,800 identities, enhancing realism and usability in 3D applications.
                 </p>
                 <ul>
                     <li>
@@ -134,25 +139,38 @@
                         Our digital faces are created using a generative model built from high quality head scans of a small number of individuals <i>obtained with consent</i>.
                     </li>
                     <li>
-                        <b>Labeling noise</b> -
+                        <b>Labeling noise and Camera parameters Inaccuracies</b> -
                         Web images collected by searching the names of celebrities often contain errors.
-                        Our synthetic data has <i>guaranteed correctness of labels</i>.
-                    </li>
-                    <li>
-                        <b>Data bias</b> -
-                        Face recognition models are generally trained and tested on celebrity faces, many of which are taken with strong lighting and make-up.
-                        They also have imbalanced racial distribution.
-                        Our synthetic data generation pipeline allows us to control the distribution of the data and ensure a <i>fair</i> dataset.
+                        Our synthetic data has <i>guaranteed correctness of camera parameetrs and labels</i>.
                     </li>
                 </ul>
             </div>
         </div>
-    </section>
+    </section>    
     <section class="section pt-0">
         <div class="container is-max-desktop">
             <h1 class="title is-4">
                 About the Dataset
             </h1>
+            <div class="content has-text-justified-desktop">
+                <p>
+                    The GeoGen dataset is a comprehensive collection of over 70,000 synthetic face images designed for advanced face recognition and 3D geometry reconstruction research.
+                </p>
+                <p>
+                    The dataset is essential for training deep learning models that are geared towards high-fidelity 3D facial geometry reconstruction.
+                </p>
+                <p>
+                    This dataset was introduced in our paper titled GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions and can be used to train deep learning models for 3D Reconstruction.
+                </p>
+                <p>
+                    The dataset contains:
+                </p>
+                <ul>
+                    <li>
+                        The dataset comprises 70,000 images distributed across 10,000 identities, with each identity represented by 7 unique images. These images are captured from various camera angles spanning a full 360-degree view to enhance the diversity and comprehensiveness of the dataset.
+                    </li>
+                </ul>
+            </div>
             <div class="content has-text-justified-desktop">
                 <p>
                     We build on the synthetic face generation framework of <a href="https://microsoft.github.io/FaceSynthetics/">Wood et al.</a> to create a dataset of <b>over one million</b> synthetic face images.
@@ -200,17 +218,8 @@
                     <img src="img/variety_id2.jpg" />
                 </div>
             </div>
-            <div class="content has-text-justified-desktop">
-                <p>
-                    <b>DigiFace-1M</b> is split into two parts:
-                    <ul>
-                        <li>720K images with 10K identities (72 images per identity). For each identity, 4 different sets of accessories are sampled and 18 images are rendered for each set.</li>
-                        <li>500K images with 100K identities (5 images per identity). For each identity, only one set of accessories is sampled.</li>
-                    </ul>
-                </p>
-            </div>
         </div>
-    </section>
+    </section>    
     <section class="section pt-0">
         <div class="container is-max-desktop">
             <h1 class="title is-4">
@@ -374,13 +383,13 @@
                 BibTeX
             </h1>
             <pre>
-@inproceedings{bae2023digiface1m,
-    title={DigiFace-1M: 1 Million Digital Face Images for Face Recognition},
-    author={Bae, Gwangbin and de La Gorce, Martin and Baltru{\v{s}}aitis, Tadas and Hewitt, Charlie and Chen, Dong and Valentin, Julien and Cipolla, Roberto and Shen, Jingjing},
-    booktitle={2023 IEEE Winter Conference on Applications of Computer Vision (WACV)},
-    year={2023},
-    organization={IEEE}
-}
+                @inproceedings{esposito2024geogen,
+                    title={GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions},
+                    author={Esposito, Salvatore and Xu, Qingshan and Kania, Kacper and Hewitt, Charlie and Mariotti, Octave and Petikam, Lohit and Valentin, Julien and Onken, Arno and Mac Aodha, Oisin},
+                    booktitle={Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR)},
+                    year={2024}
+                    organization={IEEE}
+                  }
 </pre>
         </div>
     </section>
