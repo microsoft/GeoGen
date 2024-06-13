@@ -10,7 +10,7 @@ The dataset is essential for training deep learning models that are geared towar
 
 The dataset contains:
 
-- The dataset comprises 70,000 images distributed across 10,000 identities, with each identity represented by 7 unique images. These images are captured from various camera angles spanning a full 360-degree view to enhance the diversity and comprehensiveness of the dataset. The dataset includes the camera extrinsics and intrinsic in json format.
+- The dataset comprises 70,000 images distributed across 10,000 identities, with each identity represented by 7 unique images. These images are captured from various camera angles spanning a full 360-degree view to enhance the diversity and comprehensiveness of the dataset. The dataset includes the camera extrinsics and intrinsics in json format.
 
 The GeoGen dataset can be used for **non-commercial** research, and is licensed under the license found in [LICENSE](LICENSE).
 
