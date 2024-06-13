@@ -66,25 +66,25 @@
                     <a href="mailto:omariott@exseed.ed.ac.uk">Octave&nbsp;Mariotti</a>
                 </span>
                 <span>
-                    <a href="mailto:lohitpetikam@microsoft.com">Lohit&nbsp;Petikam</a>
+                    <a href="https://lohit.dev/">Lohit&nbsp;Petikam</a>
                 </span>
                 <span>
-                    <a href="mailto:juvalen@microsoft.com">Julien&nbsp;Valentin</a>
+                    <a href="https://scholar.google.co.uk/citations?user=pZPD0hMAAAAJ&hl=en">Julien&nbsp;Valentin</a>
                 </span>
                 <span>
-                    <a href="mailto:aonken@inf.ed.ac.uk">Arno&nbsp;Onken</a>
+                    <a href="https://homepages.inf.ed.ac.uk/aonken/">Arno&nbsp;Onken</a>
                 </span>
                 <span>
-                    <a href="mailto:oisin.macaodha@ed.ac.uk">Oisin&nbsp;MacAodha</a>
+                    <a href="https://homepages.inf.ed.ac.uk/omacaod/">Oisin&nbsp;Mac&nbsp;Aodha</a>
                 </span>
             </p>
         </div>
         <div class="container is-max-desktop has-text-centered mt-5">
-            <a href="https://openaccess.thecvf.com/content/WACV2023/html/Bae_DigiFace-1M_1_Million_Digital_Face_Images_for_Face_Recognition_WACV_2023_paper.html" class="button is-rounded is-link is-light mr-2">
+            <a href="https://openaccess.thecvf.com/content/CVPR2024W/GCV/html/Esposito_GeoGen_Geometry-Aware_Generative_Modeling_via_Signed_Distance_Functions_CVPRW_2024_paper.html" class="button is-rounded is-link is-light mr-2">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>Paper</span>
             </a>
-            <a href="https://arxiv.org/abs/2210.02579" class="button is-rounded is-link is-light mr-2">
+            <a href="https://arxiv.org/abs/2406.04254" class="button is-rounded is-link is-light mr-2">
                 <span class="icon"><i class="ai ai-arxiv"></i></span>
                 <span>arXiv</span>
             </a>
@@ -130,7 +130,7 @@
                     <b>GeoGen</b> aims to tackle three major problems associated with such large-scale face recognition datasets.
                 </p>
                 <p>
-                    The FFHQ dataset's lack of accurate camera parameters and ground truth meshes limits its use for precise geometric tasks. This motivated us to create and release a new dataset with accurate camera parameters, ground truth meshes, and 10 images of 512×512 for each of 19,800 identities, enhancing realism and usability in 3D applications.
+                    The FFHQ dataset's lack of accurate camera parameters and ground truth meshes limits its use for precise geometric tasks. This motivated us to create and release a new dataset with accurate camera parameters, and 7 images of 512×512 for each of 10,000 identities, enhancing realism and usability in 3D applications.
                 </p>
                 <ul>
                     <li>
@@ -160,14 +160,14 @@
                     The dataset is essential for training deep learning models that are geared towards high-fidelity 3D facial geometry reconstruction.
                 </p>
                 <p>
-                    This dataset was introduced in our paper titled GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions and can be used to train deep learning models for 3D Reconstruction.
+                    This dataset was introduced in our paper titled GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions.
                 </p>
                 <p>
                     The dataset contains:
                 </p>
                 <ul>
                     <li>
-                        The dataset comprises 70,000 images distributed across 10,000 identities, with each identity represented by 7 unique images. These images are captured from various camera angles spanning a full 360-degree view to enhance the diversity and comprehensiveness of the dataset.
+                        The dataset comprises 70,000 images distributed across 10,000 identities, with each identity represented by 7 unique images. These images are captured from various camera angles spanning a full 360-degree view to enhance the diversity and comprehensiveness of the dataset, in addition to their camera parameters.
                     </li>
                 </ul>
                 <p>
@@ -180,13 +180,17 @@
                 </p>
             </div>
             <div class="columns">
-                <div class="column">
-                    <img src="img/accessories_id1.png" />
+                <div class="column is-12">
+                    <img src="img/accessories_id1.png" style="width: 100%; height: auto;"/>
                 </div>
-                <div class="column is-hidden-mobile">
-                    <img src="img/accessories_id2.png" />
+                <div class="column is-12">
+                    <img src="img/accessories_id2.png" style="width: 100%; height: auto;"/>
                 </div>
             </div>
+            <div class="content has-text-justified-desktop">
+                <p>After sampling the identity and the accessories, we can render multiple images...</p>
+            </div>
+        </div>
             <div class="content has-text-justified-desktop">
                 <p>
                     After sampling the identity and the accessories, we can render multiple images by varying the pose, expression, environment (lighting and background) and camera.
