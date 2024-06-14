@@ -16,7 +16,7 @@ The GeoGen dataset can be used for **non-commercial** research, and is licensed 
 
 ## Downloading the Dataset
 
-For convenience the dataset is split into 7 parts and the last part contains the metadata with the camera parameters which can be downloaded here: 
+For convenience the images dataset is split into 7 parts and the last part contains the metadata with the camera parameters which can be downloaded here: 
 
 7 images per identity
 
@@ -27,6 +27,13 @@ For convenience the dataset is split into 7 parts and the last part contains the
 - [P5](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_133333-166665_5_imgs.zip)
 - [P6](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_166666-199998_5_imgs.zip)
 - [P7](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_166666-199998_5_imgs.zip)
+
+
+
+Camera parameters:
+
+- [P8](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_166666-199998_5_imgs.zip)
+
 
 
 
@@ -48,11 +55,9 @@ The extrinsics and intrinsics are in their respective metadata.json files in the
 ```
 metadata_id_n_jsom
 
-├── name of the subject                 # Corresponding name image of subject subj_id_n
-├── cameras                             # Camera parameters of image of subject subj_id_n
+├── name of the subject                 # Corresponding name image from subj_id_n
+├── cameras                             # Camera parameters of image from subj_id_n
 ...
-├── k.png                 
-```
 
 
 
