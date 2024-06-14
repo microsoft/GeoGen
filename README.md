@@ -42,6 +42,23 @@ subj_id_n
 ├── k.png                 # k+1 rendered image of subject subj_id_n
 ```
 
+The extrinsics and intrinsics are in their respective metadata.json files in the following layout.
+
+
+```
+metadata_id_n_jsom
+
+├── name of the subject                 # Corresponding name image of subject subj_id_n
+├── cameras                             # Camera parameters of image of subject subj_id_n
+...
+├── k.png                 
+```
+
+
+
+For the camera parameters the average focal lenght is 50 and the sensor width is 36. 
+
+
 ## Disclaimer
 
 Some of our rendered faces may be close in appearance to the faces of real people.
@@ -55,7 +72,7 @@ If you use the GeoGen dataset in your work, please cite the following [paper](ht
 @inproceedings{esposito2024geogen,
   title={GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions},
   author={Esposito, Salvatore and Xu, Qingshan and Kania, Kacper and Hewitt, Charlie and Mariotti, Octave and Petikam, Lohit and Valentin, Julien and Onken, Arno and Mac Aodha, Oisin},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) workshops},
   year={2024}
   organization={IEEE}
 }
