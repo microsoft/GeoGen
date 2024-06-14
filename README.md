@@ -28,18 +28,14 @@ For convenience the images dataset is split into 7 parts and the last part conta
 - [P6](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_166666-199998_5_imgs.zip)
 - [P7](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_166666-199998_5_imgs.zip)
 
-
-
 Camera parameters:
 
 - [P8](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_166666-199998_5_imgs.zip)
 
 
-
-
 ## Dataset Layout
 
-The GeoGen dataset contains cropped color images in the following layout.
+The GeoGen dataset contains cropped color images in the following layout. For the camera parameters the average focal lenght is 50 and the sensor width is 36. 
 
 ```
 subj_id_n
@@ -49,20 +45,12 @@ subj_id_n
 ├── k.png                 # k+1 rendered image of subject subj_id_n
 ```
 
-The extrinsics and intrinsics are in their respective metadata.json files in the following layout.
-
-
 ```
-metadata_id_n_jsom
+metadata_id_n_jsom                      # The extrinsics and intrinsics are in their respective metadata.json files in the following layout.
 
 ├── name of the subject                 # Corresponding name image from subj_id_n
 ├── cameras                             # Camera parameters of image from subj_id_n
 ...
-
-
-
-For the camera parameters the average focal lenght is 50 and the sensor width is 36. 
-
 
 ## Disclaimer
 
