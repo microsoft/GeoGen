@@ -43,14 +43,12 @@ subj_id_n
 ├── 1.png                 # Second rendered image of subject subj_id_n
 ...
 ├── k.png                 # k+1 rendered image of subject subj_id_n
-```
 
-```
 metadata_id_n_jsom                      # The extrinsics and intrinsics are in their respective metadata.json files in the following layout.
 
 ├── name of the subject                 # Corresponding name image from subj_id_n
 ├── cameras                             # Camera parameters of image from subj_id_n
-...
+```
 
 ## Disclaimer
 
@@ -60,6 +58,8 @@ Any such similarity is naturally unintentional, as it would be in a dataset of r
 ## Citation
 
 If you use the GeoGen dataset in your work, please cite the following [paper](https://github.com/microsoft/GeoGen/raw/main/paper.pdf):
+
+
 ```
 @inproceedings{esposito2024geogen,
   title={GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions},
@@ -68,4 +68,5 @@ If you use the GeoGen dataset in your work, please cite the following [paper](ht
   year={2024}
   organization={IEEE}
 }
+
 ```
