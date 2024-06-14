@@ -64,7 +64,7 @@ If you use the GeoGen dataset in your work, please cite the following [paper](ht
 @inproceedings{esposito2024geogen,
   title={GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions},
   author={Esposito, Salvatore and Xu, Qingshan and Kania, Kacper and Hewitt, Charlie and Mariotti, Octave and Petikam, Lohit and Valentin, Julien and Onken, Arno and Mac Aodha, Oisin},
-  booktitle={Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR) workshops},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) workshops},
   year={2024}
   organization={IEEE}
 }
