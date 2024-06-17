@@ -129,20 +129,7 @@
                     Previous approaches, such as EG3D and StyleSDF, have attempted to address these issues with varying degrees of success. State-of-the-art face recognition models are trained on millions of real human face images collected from the internet. 
                     <b>GeoGen</b> aims to tackle three major problems associated with such large-scale face recognition datasets.
                 </p>
-                <p>
-                    The FFHQ dataset's lack of accurate camera parameters and ground truth meshes limits its use for precise geometric tasks. This motivated us to create and release a new dataset with accurate camera parameters, and 7 images of 512×512 for each of 10,000 identities, enhancing realism and usability in 3D applications.
-                </p>
                 <ul>
-                    <li>
-                        <b>Ethical issues</b> -
-                        Many existing datasets are obtained by collecting web images without explicit consent.
-                        Our digital faces are created using a generative model built from high quality head scans of a small number of individuals <i>obtained with consent</i>.
-                    </li>
-                    <li>
-                        <b>Labeling noise and Camera parameters Inaccuracies</b> -
-                        Web images collected by searching the names of celebrities often contain errors.
-                        Our synthetic data has <i>guaranteed correctness of camera parameetrs and labels</i>.
-                    </li>
                 </ul>
             </div>
         </div>
@@ -154,29 +141,24 @@
             </h1>
             <div class="content has-text-justified-desktop">
                 <p>
-                    The GeoGen dataset is a comprehensive collection of over 70,000 synthetic face images designed for advanced face recognition and 3D geometry reconstruction research.
+                    The GeoGen dataset is a comprehensive collection of over 70,000 synthetic face images spanning 360 degrees views designed for 3D geometry reconstruction research. We build on the synthetic face generation framework of <a href="https://microsoft.github.io/FaceSynthetics/">Wood et al.</a> 
                 </p>
                 <p>
-                    The dataset is essential for training deep learning models that are geared towards high-fidelity 3D facial geometry reconstruction.
-                </p>
-                <p>
-                    This dataset was introduced in our paper titled GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions.
-                </p>
-                <p>
-                    The dataset contains:
+                    This dataset, introduced in our paper "GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions," significantly enhances the realism and usability for 3D applications by focusing on the accuracy of camera parameters and the ability to generate easily attainable pseudo ground truths.
                 </p>
                 <ul>
                     <li>
-                        The dataset comprises 70,000 images distributed across 10,000 identities, with each identity represented by 7 unique images. These images are captured from various camera angles spanning a full 360-degree view to enhance the diversity and comprehensiveness of the dataset, in addition to their camera parameters.
+                        <strong>Accurate Camera Parameters:</strong> GeoGen sets itself apart with highly accurate camera parameters for each image, ensuring reliable input for tasks demanding exact geometric precision.
+                    </li>
+                    <li>
+                        <strong>Full Azimuthal Coverage:</strong> By providing images from a full 360-degree spectrum, the dataset offers unparalleled views of synthetic human heads, crucial for thorough 3D reconstructions.
+                    </li>
+                    <li>
+                        <strong>Pseudo Ground Truths:</strong> The dataset facilitates the generation of pseudo ground truths using advanced multi-view stereo and surface reconstruction techniques, enabling detailed quantitative evaluations of 3D models.
                     </li>
                 </ul>
                 <p>
-                    We build on the synthetic face generation framework of <a href="https://microsoft.github.io/FaceSynthetics/">Wood et al.</a> to create a dataset of <b>over one million</b> synthetic face images.
-                    This synthetics dataset helps us to overcome three primary shortcomings of existing large-scale face recognition datasets:
-                </p>
-                <p>
-                    We define identity as a unique combination of facial geometry, texture, eye color, and hair style.
-                    For each identity, we sample a set of accessories including clothing, make-up, glasses, face-wear, and head-wear.
+                    With its robust framework and detailed captures, the GeoGen dataset is poised to be an essential resource for researchers and developers working on next-generation 3D modeling technologies.
                 </p>
             </div>
             <div class="columns">
