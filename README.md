@@ -6,7 +6,7 @@ The GeoGen dataset is a comprehensive collection of over 70,000 synthetic face i
 
 The dataset is essential for training deep learning models that are geared towards high-fidelity 3D facial geometry reconstruction.
 
- This dataset was introduced in our paper titled [GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions](https://microsoft.github.io/GeoGen) and can be used to train deep learning models for 3D Reconstruction.
+ This dataset was introduced in our paper titled [GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions](https://aka.ms/GeoGen) and can be used to train deep learning models for 3D Reconstruction.
 
 The dataset contains:
 
@@ -16,7 +16,7 @@ The GeoGen dataset can be used for **non-commercial** research, and is licensed 
 
 ## Downloading the Dataset
 
-For convenience the images dataset is split into 7 parts and the last part contains the metadata with the camera parameters which can be downloaded here: 
+For convenience the images dataset is split into 7 parts and the last part contains the metadata with the camera parameters which can be downloaded here:
 
 7 images per identity
 
@@ -32,10 +32,9 @@ Camera parameters:
 
 - [P8](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_166666-199998_5_imgs.zip)
 
-
 ## Dataset Layout
 
-The GeoGen dataset contains cropped color images in the following layout. For the camera parameters the average focal lenght is 50 and the sensor width is 36. 
+The GeoGen dataset contains cropped color images in the following layout. For the camera parameters the average focal lenght is 50 and the sensor width is 36.
 
 ```
 subj_id_n
@@ -59,14 +58,13 @@ Any such similarity is naturally unintentional, as it would be in a dataset of r
 
 If you use the GeoGen dataset in your work, please cite the following [paper](https://github.com/microsoft/GeoGen/raw/main/paper.pdf):
 
-
-```
+```bibtex
 @inproceedings{esposito2024geogen,
-  title={GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions},
-  author={Esposito, Salvatore and Xu, Qingshan and Kania, Kacper and Hewitt, Charlie and Mariotti, Octave and Petikam, Lohit and Valentin, Julien and Onken, Arno and Mac Aodha, Oisin},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) workshops},
-  year={2024}
-  organization={IEEE}
+    author = {Esposito, Salvatore and Xu, Qingshan and Kania, Kacper and Hewitt, Charlie and Mariotti, Octave and Petikam, Lohit and Valentin, Julien and Onken, Arno and Mac Aodha, Oisin},
+    title = {GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month = {June},
+    year = {2024},
+    pages = {7479-7488}
 }
-
 ```
