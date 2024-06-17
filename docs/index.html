@@ -32,9 +32,9 @@
                     </a>
                 </div>
                 <div class="navbar-end">
-                    <a class="navbar-item" href="https://cvpr.thecvf.com/">
-                        <img class="is-hidden-touch" src="img/cvpr-logo-light.png" style="height: 100%;" alt="CVPR 2024">
-                        <img class="is-hidden-desktop" src="img/cvpr-logo-dark.png" style="height: 100%;" alt="CVPR 2024">
+                    <a class="navbar-item" href="https://cvpr.thecvf.com/virtual/2024">
+                        <img class="is-hidden-touch" src="img/cvpr-logo-light.svg" style="height: 100%;" alt="CVPR 2024">
+                        <img class="is-hidden-desktop" src="img/cvpr-logo-dark.svg" style="height: 100%;" alt="CVPR 2024">
                     </a>
                 </div>
             </div>
@@ -46,10 +46,9 @@
                 GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions
             </h1>
             <p class="subtitle is-5 has-text-centered has-text-grey">
-                Computer Vision <br class="is-hidden-tablet"> and Pattern Recognition 2024
+                Computer Vision and Pattern Recognition 2024<br><a href="https://generative-vision.github.io/workshop-CVPR-24/" class="has-text-grey">2nd Workshop on Generative Models for Computer Vision</a>
             </p>
             <p class="subtitle is-6 has-text-centered authors mt-5" style="line-height: 1.5;">
-
                 <span>
                     <a href="https://iamsalvatore.io/">Salvatore&nbsp;Esposito</a>
                 </span>
@@ -97,8 +96,7 @@
     <section>
         <div class="container is-max-desktop">
             <figure class="image">
-                <img src="img/sx-data.jpg" class="is-hidden-mobile"/>
-                <img src="img/sx-data-narrow.jpg" class="is-hidden-tablet" />
+                <img src="img/sx-data.jpg" />
             </figure>
         </div>
     </section>
@@ -108,16 +106,20 @@
                 Abstract
             </h1>
             <div class="content has-text-justified-desktop">
-                We introduce a new generative approach for synthesizing 3D geometry and images from single-view collections. 
-                Most existing approaches predict volumetric density to render multi-view consistent images. By employing volumetric rendering using neural radiance fields, they inherit a key limi- tation: the generated geometry is noisy and unconstrained, limiting the quality and utility of the output meshes. 
-                To address this issue, we propose GeoGen, a new SDF-based 3D generative model trained in an end-to-end manner. Initially, we reinterpret the volumetric density as a Signed Distance Function (SDF). This allows us to introduce useful priors to generate valid meshes. 
-                However, those priors prevent the generative model from learning details, limiting the applicability of the method to real-world scenarios. To alle- viate that problem, we make the transformation learnable and constrain the rendered depth map to be consistent with the zero-level set of the SDF. 
-                Through the lens of adversarial training, we encourage the network to produce higher fidelity details on the output meshes. 
-                For evaluation, we in- troduce a synthetic dataset of human avatars captured from 360-degree camera angles, to overcome the challenges presented by real-world datasets, which often lack 3D consistency and do not cover all camera angles. 
+                We introduce a new generative approach for synthesizing 3D geometry and images from single-view collections.
+                Most existing approaches predict volumetric density to render multi-view consistent images.
+                By employing volumetric rendering using neural radiance fields, they inherit a key limitation: the generated geometry is noisy and unconstrained, limiting the quality and utility of the output meshes.
+                To address this issue, we propose GeoGen, a new SDF-based 3D generative model trained in an end-to-end manner.
+                Initially, we reinterpret the volumetric density as a Signed Distance Function (SDF).
+                This allows us to introduce useful priors to generate valid meshes.
+                However, those priors prevent the generative model from learning details, limiting the applicability of the method to real-world scenarios.
+                To alleviate that problem, we make the transformation learnable and constrain the rendered depth map to be consistent with the zero-level set of the SDF.
+                Through the lens of adversarial training, we encourage the network to produce higher fidelity details on the output meshes.
+                For evaluation, we introduce a synthetic dataset of human avatars captured from 360-degree camera angles, to overcome the challenges presented by real-world datasets, which often lack 3D consistency and do not cover all camera angles.
                 Our experiments on multiple datasets show that GeoGen produces visually and quantitatively better geometry than the previous generative models based on neural radiance fields.
             </div>
         </div>
-    </section>  
+    </section>
     <section class="section pt-0">
         <div class="container is-max-desktop">
             <h1 class="title is-4">
@@ -125,12 +127,13 @@
             </h1>
             <div class="content has-text-justified-desktop">
                 <p>
-                    The GeoGen dataset is a comprehensive collection of over 70,000 synthetic face images spanning 360 degrees views designed for 3D geometry reconstruction research. We build on the synthetic face generation framework of <a href="https://microsoft.github.io/FaceSynthetics/">Wood et al.</a> 
+                    The GeoGen dataset is a comprehensive collection of over 70,000 synthetic face images spanning 360 degrees views designed for 3D geometry reconstruction research.
+                    We build on the synthetic face generation framework of <a href="https://microsoft.github.io/FaceSynthetics/">Wood et al.</a>
                 </p>
                 <p>
-                    For our dataset, we randomly generate 7 images of 512×512 for each of 10,800 identities, ensuring a comprehensive set of different views, encompassing full azimuthal coverage</p>
+                    For our dataset, we randomly generate 7 images of 512&times;512 for each of 10,800 identities, ensuring a comprehensive set of different views, encompassing full azimuthal coverage</p>
                 <p>
-                    This dataset, introduced in our paper "GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions," significantly enhances the realism and usability for 3D applications by focusing on the accuracy of camera parameters and the ability to generate easily attainable pseudo ground truths.
+                    This dataset, introduced in our paper significantly enhances the realism and usability for 3D applications by focusing on the accuracy of camera parameters and the ability to generate easily attainable pseudo ground truths.
                 </p>
                 <ul>
                     <li>
@@ -163,7 +166,8 @@
             </h1>
             <div class="content has-text-justified-desktop">
                 <p>
-                    Our latest advances in 3D geometry reconstruction, as detailed in our findings for both ShapeNet Cars and Synthetic Heads, demonstrate significant improvements over previous methods. By incorporating Signed Distance Functions (SDF) and Depth Loss, GeoGen achieves superior accuracy and detail in reconstructed models.
+                    Our latest advances in 3D geometry reconstruction, as detailed in our findings for both ShapeNet Cars and Synthetic Heads, demonstrate significant improvements over previous methods.
+                    By incorporating Signed Distance Functions (SDF) and Depth Loss, GeoGen achieves superior accuracy and detail in reconstructed models.
                 </p>
                 <div class="column is-hidden-mobile">
                     <img src="img/accessories_id3.png" />
@@ -173,7 +177,11 @@
                 </div>
                 <div class="table-container">
                     <table class="table">
-                        <caption>Comparison of different 3D reconstruction metrics for generative models on <em>ShapeNet Cars</em> and our <em>Synthetic Heads</em> dataset. We report averages for MSE, HD, and MSD metrics. Variations of GeoGen without the SDF and Depth Loss constraints are also shown. Best methods for each dataset are bolded.</caption>
+                        <caption>
+                            Comparison of different 3D reconstruction metrics for generative models on <em>ShapeNet Cars</em> and our <em>Synthetic Heads</em> dataset.
+                            We report averages for MSE, HD, and MSD metrics. Variations of GeoGen without the SDF and Depth Loss constraints are also shown.
+                            Best methods for each dataset are bolded.
+                        </caption>
                         <thead>
                             <tr>
                                 <th>Method</th>
@@ -248,24 +256,26 @@
             </div>
             <div class="content has-text-justified-desktop">
                 <p>
-                    The precision in our 3D models showcases our capability to tackle complex reconstruction challenges. These results are pivotal for applications requiring precise geometric data and serve as a benchmark for future developments in the field.
+                    The precision in our 3D models showcases our capability to tackle complex reconstruction challenges.
+                    These results are pivotal for applications requiring precise geometric data and serve as a benchmark for future developments in the field.
                 </p>
             </div>
         </div>
-    </section>    
+    </section>
     <section class="section pt-0">
         <div class="container is-max-desktop">
             <h1 class="title is-4">
                 BibTeX
             </h1>
             <pre>
-                @inproceedings{esposito2024geogen,
-                    title={GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions},
-                    author={Esposito, Salvatore and Xu, Qingshan and Kania, Kacper and Hewitt, Charlie and Mariotti, Octave and Petikam, Lohit and Valentin, Julien and Onken, Arno and Mac Aodha, Oisin},
-                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) workshops},
-                    year={2024}
-                    organization={IEEE}
-                  }
+@inproceedings{esposito2024geogen,
+    author = {Esposito, Salvatore and Xu, Qingshan and Kania, Kacper and Hewitt, Charlie and Mariotti, Octave and Petikam, Lohit and Valentin, Julien and Onken, Arno and Mac Aodha, Oisin},
+    title = {GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month = {June},
+    year = {2024},
+    pages = {7479-7488}
+}
 </pre>
         </div>
     </section>
