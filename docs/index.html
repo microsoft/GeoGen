@@ -113,27 +113,11 @@
                 To address this issue, we propose GeoGen, a new SDF-based 3D generative model trained in an end-to-end manner. Initially, we reinterpret the volumetric density as a Signed Distance Function (SDF). This allows us to introduce useful priors to generate valid meshes. 
                 However, those priors prevent the generative model from learning details, limiting the applicability of the method to real-world scenarios. To alle- viate that problem, we make the transformation learnable and constrain the rendered depth map to be consistent with the zero-level set of the SDF. 
                 Through the lens of adversarial training, we encourage the network to produce higher fidelity details on the output meshes. 
-                For evaluation, we in- troduce a synthetic dataset of human avatars captured from 360-degree camera angles, to overcome the challenges pre- sented by real-world datasets, which often lack 3D consistency and do not cover all camera angles. 
+                For evaluation, we in- troduce a synthetic dataset of human avatars captured from 360-degree camera angles, to overcome the challenges presented by real-world datasets, which often lack 3D consistency and do not cover all camera angles. 
                 Our experiments on multiple datasets show that GeoGen produces visually and quantitatively better geometry than the previous generative models based on neural radiance fields.
             </div>
         </div>
-    </section>
-    <section class="section pt-0">
-        <div class="container is-max-desktop">
-            <h1 class="title is-4">
-                Motivation
-            </h1>
-            <div class="content has-text-justified-desktop">
-                <p>
-                    A common pitfall in the pursuit of higher image quality is the sidelining of the quality of the underlying geometry. This issue is evident in datasets like FFHQ, which lack accurate camera parameters and ground truth meshes, relying instead on approximate camera parameters. Such limitations hinder their applicability for tasks requiring precise geometric information. 
-                    Previous approaches, such as EG3D and StyleSDF, have attempted to address these issues with varying degrees of success. State-of-the-art face recognition models are trained on millions of real human face images collected from the internet. 
-                    <b>GeoGen</b> aims to tackle three major problems associated with such large-scale face recognition datasets.
-                </p>
-                <ul>
-                </ul>
-            </div>
-        </div>
-    </section>    
+    </section>  
     <section class="section pt-0">
         <div class="container is-max-desktop">
             <h1 class="title is-4">
