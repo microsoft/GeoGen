@@ -33,7 +33,7 @@ For convenience the images dataset is split into 7 parts and the last part conta
 
 Camera parameters:
 
-- [P8](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_8.zip)
+- [P8](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/metadata_files.zip)
 
 ## Dataset Layout
 
