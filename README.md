@@ -6,8 +6,8 @@ The GeoGen dataset is a comprehensive collection of over 70,000 synthetic face i
 
 The dataset is essential for training deep learning models that are geared towards high-fidelity 3D facial geometry reconstruction.
 
- This dataset was introduced in our paper titled [GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions](https://aka.ms/GeoGen) and can be used to train deep learning models for 3D Reconstruction.
- This dataset was introduced in our paper titled [GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions](https://aka.ms/GeoGen) and can be used to train deep learning models for 3D Reconstruction.
+
+ This dataset was introduced in our paper titled [GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions](https://aka.ms/GeoGen).
 
 The dataset contains:
 
@@ -16,9 +16,10 @@ The dataset contains:
 The GeoGen dataset can be used for **non-commercial** research, and is licensed under the license found in [LICENSE](LICENSE).
 
 ## Downloading the Dataset
+For convenience the images dataset is split into 7 parts and the last part contains the metadata with the camera parameters which can be downloaded here:
 
-For convenience the images dataset is split into 7 parts and the last part contains the metadata with the camera parameters which can be downloaded here:
-For convenience the images dataset is split into 7 parts and the last part contains the metadata with the camera parameters which can be downloaded here:
+
+
 
 7 images per identity
 
@@ -33,7 +34,6 @@ For convenience the images dataset is split into 7 parts and the last part conta
 Camera parameters:
 
 - [P8](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_8.zip)
-- [P8](https://facesyntheticspubwedata.blob.core.windows.net/wacv-2023/subjects_166666-199998_5_imgs.zip)
 
 ## Dataset Layout
 
