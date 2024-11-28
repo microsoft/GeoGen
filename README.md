@@ -23,17 +23,17 @@ For convenience the images dataset is split into 7 parts and the last part conta
 
 7 images per identity
 
-- [P1](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_1.zip)
-- [P2](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_2.zip)
-- [P3](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_3.zip)
-- [P4](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_4.zip)
-- [P5](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_5.zip)
-- [P6](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_6.zip)
-- [P7](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/images_batch_7.zip)
+- [P1](https://facesyntheticspubwedata.z6.web.core.windows.net/cvpr-2024/images_batch_1.zip)
+- [P2](https://facesyntheticspubwedata.z6.web.core.windows.net/cvpr-2024/images_batch_2.zip)
+- [P3](https://facesyntheticspubwedata.z6.web.core.windows.net/cvpr-2024/images_batch_3.zip)
+- [P4](https://facesyntheticspubwedata.z6.web.core.windows.net/cvpr-2024/images_batch_4.zip)
+- [P5](https://facesyntheticspubwedata.z6.web.core.windows.net/cvpr-2024/images_batch_5.zip)
+- [P6](https://facesyntheticspubwedata.z6.web.core.windows.net/cvpr-2024/images_batch_6.zip)
+- [P7](https://facesyntheticspubwedata.z6.web.core.windows.net/cvpr-2024/images_batch_7.zip)
 
 Camera parameters:
 
-- [P8](https://facesyntheticspubwedata.blob.core.windows.net/cvpr-2024/metadata_files.zip)
+- [P8](https://facesyntheticspubwedata.z6.web.core.windows.net/cvpr-2024/metadata_files.zip)
 
 ## Dataset Layout
 
